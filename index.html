@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gatsby Ventures LLC | Wholesale buyer and Amazon seller</title>
+<meta name="description" content="Gatsby Ventures LLC is a New Jersey online retailer. We buy branded products at wholesale and sell them to Amazon customers through Fulfillment by Amazon.">
+<link rel="canonical" href="https://gatsbyventuresllc.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gatsby Ventures LLC">
+<meta property="og:title" content="Gatsby Ventures LLC">
+<meta property="og:description" content="We buy wholesale and sell your products on Amazon.">
+<meta property="og:url" content="https://gatsbyventuresllc.com/">
+<meta name="theme-color" content="#173029">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173029'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%2346D18A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
+<style>
+:root{
+  --kraft:#C9A47A;
+  --ink:#173029;
+  --ink-soft:#3D5249;
+  --concrete:#EDF0EB;
+  --paper:#FFFFFF;
+  --go:#1E7F52;
+  --glow:#46D18A;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--concrete);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--go);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:1rem;z-index:20;background:var(--ink);color:#fff;padding:.6rem 1rem;font-weight:700}
+.skip:focus{left:1rem}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+
+h1,h2,h3{margin:0;font-weight:800;font-stretch:72%;line-height:1;text-wrap:balance}
+h2{font-size:clamp(2.2rem,4.2vw,3.2rem);margin-bottom:1rem}
+h3{font-size:1.45rem;line-height:1.1;margin-bottom:.5rem}
+
+/* Header and hero sit on a kraft carton */
+.carton{background-color:var(--kraft);background-image:repeating-linear-gradient(90deg,rgba(94,62,26,.07) 0 1px,transparent 1px 6px)}
+.top{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.25rem}
+.brand{display:inline-flex;align-items:center;gap:.65rem;text-decoration:none;font-weight:800;font-stretch:75%;font-size:1.4rem;line-height:1}
+.light{display:inline-block;flex:none;width:.75rem;height:.75rem;border-radius:50%;background:var(--glow);box-shadow:0 0 0 3px rgba(70,209,138,.22),0 0 16px 3px rgba(70,209,138,.6)}
+.nav{display:flex;align-items:center;gap:1.75rem;font-weight:600;font-size:.98rem}
+.nav a{text-decoration:none}
+.nav a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.nav a.btn:hover{text-decoration:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:.7rem 1.3rem;border:2px solid var(--ink);border-radius:4px;font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;transition:background-color .15s ease,border-color .15s ease}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--go);border-color:var(--go)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:rgba(23,48,41,.08)}
+.btn-sm{min-height:2.5rem;padding:.45rem 1rem;font-size:.95rem}
+
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:3.5rem;align-items:center;padding-block:3rem 5.5rem}
+.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:850;font-stretch:66%;line-height:.95;margin-bottom:1.5rem}
+.lead{max-width:33em;margin:0 0 2.25rem;font-size:1.18rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+
+/* The shipping label */
+.label-wrap{position:relative;justify-self:center;width:min(100%,25rem);margin-top:1.25rem}
+.label{background:var(--paper);border:2px solid var(--ink);transform:rotate(-1.75deg);box-shadow:0 2px 0 rgba(0,0,0,.06),0 22px 34px -20px rgba(74,44,12,.6)}
+.label dl{margin:0}
+.row{display:grid;grid-template-columns:7rem minmax(0,1fr);border-bottom:2px solid var(--ink)}
+.row dt,.row dd{margin:0;padding:.75rem .95rem}
+.row dt{font-weight:800;font-stretch:70%;font-size:1.08rem;line-height:1.3;border-right:2px solid var(--ink)}
+.row dd{font-size:.98rem;line-height:1.4}
+.code{padding:1.1rem 1.4rem .9rem}
+.bars{height:4.25rem;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 6px),repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 5px),repeating-linear-gradient(90deg,var(--ink) 0 3px,transparent 3px 17px)}
+.code p{margin:.5rem 0 0;text-align:center;font-size:.85rem;font-weight:600;font-stretch:85%;letter-spacing:.2em}
+.tape{position:absolute;z-index:2;top:-1.15rem;left:50%;width:7.5rem;height:2.3rem;transform:translateX(-50%) rotate(3deg);background:rgba(255,255,255,.45);border-inline:1px dashed rgba(255,255,255,.7);box-shadow:0 1px 3px rgba(60,36,10,.15)}
+
+@media (prefers-reduced-motion:no-preference){
+  .label{animation:stick .75s cubic-bezier(.2,.85,.25,1) .15s both}
+  .tape{animation:tape .4s ease-out .75s both}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@keyframes stick{from{opacity:0;transform:translateY(-18px) rotate(-7deg) scale(1.04)}to{opacity:1;transform:rotate(-1.75deg)}}
+@keyframes tape{from{opacity:0;transform:translateX(-50%) rotate(3deg) scaleX(.15)}to{opacity:1;transform:translateX(-50%) rotate(3deg) scaleX(1)}}
+
+/* Sections */
+.band{padding-block:5.5rem}
+.band-white{background:#fff}
+.intro{max-width:34em;margin:0 0 3rem;font-size:1.12rem;color:var(--ink-soft)}
+
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:1.5rem 4rem;align-items:start}
+.split p{max-width:36em;margin:0 0 1.1rem;font-size:1.12rem}
+.split p:last-child{margin-bottom:0}
+
+.points{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.75rem 2.5rem}
+.points li{border-top:2px solid var(--ink);padding-top:1.1rem}
+.points p,.steps p{margin:0;color:var(--ink-soft)}
+
+.steps{position:relative;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem}
+.steps::before{content:"";position:absolute;top:1.2rem;left:1.25rem;right:12%;height:2px;background:repeating-linear-gradient(90deg,var(--ink) 0 9px,transparent 9px 16px);opacity:.35}
+.steps li{position:relative}
+.num{position:relative;display:grid;place-items:center;width:2.5rem;height:2.5rem;margin-bottom:1.2rem;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;font-stretch:75%;font-size:1.1rem}
+
+/* Contact */
+.dock{background:var(--ink);color:#C9D6CE;padding-block:6rem 5rem}
+.dock h2{color:#fff}
+.dock p{max-width:34em;margin:0 0 2.5rem;font-size:1.15rem}
+.mail{display:inline-flex;align-items:center;gap:.9rem;max-width:100%;color:#fff;text-decoration:none;font-weight:800;font-stretch:70%;font-size:clamp(1.4rem,4.8vw,3.1rem);line-height:1.15;padding-bottom:.4rem;border-bottom:3px solid var(--glow);overflow-wrap:anywhere}
+.mail:hover{color:var(--glow)}
+.mail .light{width:1rem;height:1rem}
+
+.foot{background:var(--ink);color:#9FB2A8;font-size:.9rem;padding-block:1.75rem;border-top:1px solid rgba(255,255,255,.12)}
+.foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 2rem}
+.foot p{margin:0}
+
+@media (max-width:960px){
+  .points{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:2.5rem 2rem}
+  .steps::before{display:none}
+}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:3rem;padding-block:2rem 4.5rem}
+  .split{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .nav a:not(.btn){display:none}
+  .band{padding-block:4rem}
+  .points,.steps{grid-template-columns:1fr;gap:2rem}
+  .row{grid-template-columns:5.75rem minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="carton">
+  <div class="wrap top">
+    <a class="brand" href="/"><span class="light" aria-hidden="true"></span>Gatsby Ventures</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#standards">Our standards</a>
+      <a href="#how">How it works</a>
+      <a class="btn btn-ink btn-sm" href="mailto:info@gatsbyventuresllc.com?subject=Wholesale%20inquiry">Email us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="carton" aria-labelledby="hero-title">
+    <div class="wrap hero">
+      <div>
+        <h1 id="hero-title">We buy wholesale and sell your products on Amazon.</h1>
+        <p class="lead">Gatsby Ventures LLC is an online retailer based in New Jersey. We partner with brands and distributors to bring their products to Amazon customers, and we follow your pricing policies on every listing.</p>
+        <div class="actions">
+          <a class="btn btn-ink" href="mailto:info@gatsbyventuresllc.com?subject=Wholesale%20account%20inquiry">Email us about wholesale</a>
+          <a class="btn btn-line" href="#how">How it works</a>
+        </div>
+      </div>
+      <div class="label-wrap">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="label">
+          <dl aria-label="How your products reach customers">
+            <div class="row"><dt>From</dt><dd>Your brand or authorized distributor</dd></div>
+            <div class="row"><dt>To</dt><dd>Gatsby Ventures LLC, New Jersey</dd></div>
+            <div class="row"><dt>Then</dt><dd>Amazon fulfillment centers</dd></div>
+            <div class="row"><dt>Deliver to</dt><dd>Amazon customers, with Prime-eligible shipping</dd></div>
+            <div class="row"><dt>Contents</dt><dd>New, authentic product</dd></div>
+          </dl>
+          <div class="code" aria-hidden="true"><div class="bars"></div><p>gatsbyventuresllc.com</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="about" aria-labelledby="about-title">
+    <div class="wrap split">
+      <h2 id="about-title">About Gatsby Ventures</h2>
+      <div>
+        <p>Gatsby Ventures LLC is a founder-led e-commerce company registered in New Jersey. We buy branded products at wholesale from manufacturers and their authorized distributors, then sell them through Fulfillment by Amazon, so Amazon stores, packs and ships every order.</p>
+        <p>We carry everyday categories, including health and household, beauty and personal care, home and kitchen, and toys and games. We work with suppliers across the United States, and we especially like partnering with companies in the New York, New Jersey and Connecticut area.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-white" id="standards" aria-labelledby="standards-title">
+    <div class="wrap">
+      <h2 id="standards-title">Our standards</h2>
+      <p class="intro">How we handle your products and your brand on Amazon.</p>
+      <ul class="points">
+        <li><h3>Your pricing stays intact</h3><p>We follow MAP and reseller policies, and we don't race to the bottom on price.</p></li>
+        <li><h3>Authentic, documented product</h3><p>We buy new product from brands and their authorized distributors, and we keep the invoice for every purchase.</p></li>
+        <li><h3>Listings that look right</h3><p>We check titles, images and descriptions on every product we sell, and we report errors to Amazon to get them corrected.</p></li>
+        <li><h3>Prime-eligible delivery</h3><p>Inventory is stored and shipped by Amazon's fulfillment network, so your customers get fast delivery and Amazon's customer service.</p></li>
+        <li><h3>Steady reorders</h3><p>We start with an opening order, watch sell-through closely, and reorder on a regular schedule as products sell.</p></li>
+        <li><h3>Marketplace insight</h3><p>We track pricing, reviews and sales on your listings and share what we see, so you know how your products are doing on Amazon.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How it works</h2>
+      <p class="intro">What it looks like to open a wholesale account with us.</p>
+      <ol class="steps">
+        <li><span class="num" aria-hidden="true">1</span><h3>Send your line sheet</h3><p>Email your product list, wholesale pricing and minimum order quantities.</p></li>
+        <li><span class="num" aria-hidden="true">2</span><h3>Set up the account</h3><p>We complete your new account forms and provide the business documents your team needs.</p></li>
+        <li><span class="num" aria-hidden="true">3</span><h3>Place an opening order</h3><p>We buy a first order, prep it to Amazon's requirements and send it into fulfillment.</p></li>
+        <li><span class="num" aria-hidden="true">4</span><h3>Reorder and grow</h3><p>Products that sell get reordered on a set schedule, and we add more of your line over time.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="dock" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Send us your line sheet</h2>
+      <p>Email your company name, product line and wholesale terms. Brands interested in an authorized reseller relationship are welcome to reach out too.</p>
+      <a class="mail" href="mailto:info@gatsbyventuresllc.com?subject=Wholesale%20account%20inquiry"><span class="light" aria-hidden="true"></span>info@gatsbyventuresllc.com</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> Gatsby Ventures LLC, a New Jersey limited liability company.</p>
+    <p>Amazon, Prime and Fulfillment by Amazon are trademarks of Amazon.com, Inc. or its affiliates.</p>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
